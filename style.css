@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,600&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.navbar-image {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    border-radius: 25px;
+}
+
+.navbar-heading-text {
+    font-family: "Serif";
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8c3d20;
+}
+
+#navbar-items1 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#navbar-items2 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#navbar-items3 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#navbar-items4 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+#navbar-items5 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+#navbar-items6 {
+    color: #1a1711;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+.BackgroundHomePage {
+    background-image: url("https://s7ap1.scene7.com/is/image/incredibleindia/1-gateway-of-india-state-hero?qlt=82&ts=1726670249199");
+    background-size: cover;
+    height: 100vh;
+}
+
+.Homepage-Heading {
+    color: #0a0907;
+    font-family: "Serif";
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 150px;
+}
+
+.Homepage-Button {
+    background-color: #fc9c26;
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 25px;
+    height: 40px;
+    width: 150px;
+    margin: 20px;
+}
+
+.destination-bg-container {
+    background-color: #fcfcf5;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.destination-heading {
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 600;
+    color: #8c3d20;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.destination-paragraph {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 500;
+    color: #8c3d20;
+    margin-bottom: 5px;
+}
+
+.destination-card-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+}
+
+.destination-card {
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+}
+
+.destination-card-heading {
+    font-family: "Serif";
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    color: #8c3d20;
+    margin-top: 10px;
+}
+
+.destination-card-paragraph {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 400;
+    color: #524c4a;
+}
+
+.destinatin-card-button {
+    height: 20px;
+    width: 70px;
+    background-color: transparent;
+    color: #8c3d20;
+    border-color: #8c3d20;
+    border-radius: 7px;
+    font-family: "Roboto";
+    font-size: 8px;
+    border-width: 1px;
+    margin: 0px;
+}
+
+.Spiritual-bg-container {
+    background-color: #fcfcf5;
+}
+
+.Spiritual-main-heading {
+    font-family: "Serif";
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #8c3d20;
+}
+
+.Spiritual-sub-heading {
+    font-family: "Serif";
+    font-size: 20px;
+    font-weight: 500;
+    color: #8c3d20;
+}
+
+.Spiritual-sub-paragraph {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    color: #524c4a;
+}
+
+.Spiritual-img {
+    width: 95%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.know-more-hyperlink {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0398fc;
+    margin-bottom: 60px;
+}
+
+.Tour-Guide-bg-container {
+    background-color: #fcfcf5;
+}
+
+.Tour-Guide-card-image {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.Tour-Guide-card {
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+}
+
+.Tour-Guide-card-heading {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    color: #23374a;
+    margin-top: 10px;
+}
+
+.Tour-Guide-card-paragraph {
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    color: #2d3136;
+}
+
+.more-details {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+}
+
+.Travel-Tips-Bg-container {
+    background-color: #fcfcf5;
+}
+
+.Travel-Tips-heading {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 600;
+    color: #8c3d20;
+    margin-bottom: 5px;
+}
+
+.travel-tips-list {
+    list-style-type: disc;
+    color: #241c19;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.Travel-Tips-sub-heading {
+    color: #241c19;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.ai-chatbot-bg-container {
+    background-color: #fcfcf5;
+}
+
+.ai-chatbot-heading {
+    font-family: "Roboto";
+    font-size: 26px;
+    font-weight: 600;
+    color: #8c3d20;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.ai-chatbot-subtext {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #524c4a;
+    margin-bottom: 25px;
+}
+
+.ai-chatbot-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.ai-chatbot-messages {
+    height: 220px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.bot-message {
+    background-color: #f2f2f2;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.user-message {
+    background-color: #fc9c26;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+    float: right;
+    clear: both;
+}
+
+.card-title {
+  color: #8c3d20;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card-text {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 40px;
+}
+
+.seasonal-Button {
+    background-color: #fc9c26;
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 25px;
+    height: 40px;
+    width: 350px;
+    margin: 20px;
+}
+body {
+  background-color: #fcfcf5;
+}

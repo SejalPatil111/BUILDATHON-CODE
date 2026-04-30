@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Itinerary Generator</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+  <a class="navbar-brand" href="index.html">
+    <div class="d-flex flex-row">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/028/898/066/small_2x/indian-marathi-man-showing-namaste-or-welcome-gesture-eps-10-file-vector.jpg"
+           class="navbar-image mr-1">
+      <p class="navbar-heading-text mt-3">Maharashtra Tour Guide</p>
+    </div>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link active" id ="navbar-items1" href="index.html">Home</a>
+      <a class="nav-link" id ="navbar-items2" href="destinations.html">Destinations</a>
+      <a class="nav-link " id ="navbar-items6" href="seasonal-planning.html">Seasonal Planner</a>
+      <a class="nav-link" id ="navbar-items3" href="itinerary.html">AI Itinerary</a>
+      <a class="nav-link"id ="navbar-items4" href="chatbot.html">AI Assistant</a>
+      <a class="nav-link" id ="navbar-items5" href="guides.html">Hire Guide</a>
+    </div>
+  </div>
+</nav>
+
+<div class="destination-bg-container">
+  <div class = "container">
+    <div class="row">
+      <div class="col-12">
+        <div class="container mt-5 mb-5" id="itinerarySection">
+      <h1 class="ai-chatbot-heading text-center">
+          AI-Powered Itinerary Generator
+      </h1>
+      <p class="ai-chatbot-subtext text-center mb-4">
+          Plan your Maharashtra trip in seconds using AI
+      </p>
+
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+          <div class="shadow p-4 rounded bg-white">
+              
+              <label><b>Destination City</b></label>
+              <input
+              type="text"
+              id="cityInput"
+              class="form-control mb-3"
+              placeholder="e.g. Pune, Mumbai, Nashik"
+              />
+
+              <label><b>Number of Days</b></label>
+              <select id="daysInput" class="form-control mb-3">
+              <option value="1">1 Day</option>
+              <option value="2">2 Days</option>
+              <option value="3">3 Days</option>
+              <option value="4">4 Days</option>
+              <option value="5">5 Days</option>
+              </select>
+
+              <label><b>Season</b></label>
+              <select id="seasonInput" class="form-control mb-3">
+              <option value="Monsoon">Monsoon</option>
+              <option value="Summer">Summer</option>
+              <option value="Winter">Winter</option>
+              </select>
+
+              <label><b>Language</b></label>
+              <select id="languageInput" class="form-control mb-3">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+              </select>
+
+              <button class="btn btn-dark btn-block" onclick="generateItinerary()">
+              Generate Itinerary
+              </button>
+          </div>
+          </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+          <div class="col-12 col-md-8">
+          <div id="itineraryResult" class="shadow p-4 rounded bg-white" style="display:none;"></div>
+          </div>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
