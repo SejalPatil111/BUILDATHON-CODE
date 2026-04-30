@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="index.html">
+    <div class="d-flex flex-row">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/028/898/066/small_2x/indian-marathi-man-showing-namaste-or-welcome-gesture-eps-10-file-vector.jpg"
+           class="navbar-image mr-1">
+      <p class="navbar-heading-text mt-3">Maharashtra Tour Guide</p>
+    </div>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link" id="navbar-items1" href="index.html">Home</a>
+      <a class="nav-link" id="navbar-items2" href="destinations.html">Destinations</a>
+      <a class="nav-link" id="navbar-items6" href="seasonal-planning.html">Seasonal Planner</a>
+      <a class="nav-link" id="navbar-items3" href="itinerary.html">AI Itinerary</a>
+      <a class="nav-link" id="navbar-items4" href="chatbot.html">AI Assistant</a>
+      <a class="nav-link" id="navbar-items5" href="guides.html">Hire Guide</a>
+      <a class="nav-link active" id="navbar-auth-link" href="auth.html">Login / Register</a>
+    </div>
+  </div>
+</nav>
+
+<div class="auth-bg-container pt-5 pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h1 class="ai-chatbot-heading">Tourist and Tour Guide Account</h1>
+        <p class="ai-chatbot-subtext">Register as a tourist or tour guide. Tour guides are added to the hire guide list automatically.</p>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="auth-panel shadow mb-4">
+          <h2 class="auth-panel-heading">Create Account</h2>
+
+          <label class="auth-label" for="registerName">Full Name</label>
+          <input class="form-control mb-3" id="registerName" type="text" placeholder="Enter your name">
+
+          <label class="auth-label" for="registerEmail">Email</label>
+          <input class="form-control mb-3" id="registerEmail" type="email" placeholder="Enter your email">
+
+          <label class="auth-label" for="registerPassword">Password</label>
+          <input class="form-control mb-3" id="registerPassword" type="password" placeholder="Create a password">
+
+          <label class="auth-label" for="registerRole">Account Type</label>
+          <select class="form-control mb-3" id="registerRole" onchange="toggleGuideFields()">
+            <option value="tourist">Tourist</option>
+            <option value="guide">Tour Guide</option>
+          </select>
+
+          <div id="guideRegisterFields" class="guide-extra-fields">
+            <label class="auth-label" for="guideCity">City / Area</label>
+            <input class="form-control mb-3" id="guideCity" type="text" placeholder="Mumbai, Pune, Nashik">
+
+            <label class="auth-label" for="guidePhone">Phone Number</label>
+            <input class="form-control mb-3" id="guidePhone" type="tel" placeholder="Contact number">
+
+            <label class="auth-label" for="guideBio">Short Bio</label>
+            <textarea class="form-control mb-3" id="guideBio" rows="4" placeholder="Tell tourists about your experience"></textarea>
+          </div>
+
+          <button class="auth-button" onclick="registerUser()">Register</button>
+          <p id="registerMessage" class="auth-message mt-3"></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="auth-panel shadow mb-4">
+          <h2 class="auth-panel-heading">Sign In</h2>
+
+          <label class="auth-label" for="loginEmail">Email</label>
+          <input class="form-control mb-3" id="loginEmail" type="email" placeholder="Enter your email">
+
+          <label class="auth-label" for="loginPassword">Password</label>
+          <input class="form-control mb-3" id="loginPassword" type="password" placeholder="Enter your password">
+
+          <button class="auth-button" onclick="loginUser()">Sign In</button>
+          <button class="auth-secondary-button mt-2" onclick="logoutUser()">Logout</button>
+          <p id="loginMessage" class="auth-message mt-3"></p>
+        </div>
+
+        <div class="auth-panel shadow">
+          <h2 class="auth-panel-heading">Current User</h2>
+          <p id="currentUserBox" class="auth-current-user">No one is signed in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
