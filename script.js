@@ -1,6 +1,6 @@
 const USER_STORAGE_KEY = "maharashtraTourUsers";
 const SESSION_STORAGE_KEY = "maharashtraTourCurrentUser";
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://buildathon-code.onrender.com";
 
 function getUsers() {
   return JSON.parse(localStorage.getItem(USER_STORAGE_KEY)) || [];
