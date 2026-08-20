@@ -13,6 +13,8 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
+const AI_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
+
 app.get("/", (req, res) => {
   res.send("Backend running with Groq AI");
 });
@@ -22,7 +24,7 @@ app.post("/chat", async (req, res) => {
     const userMessage = req.body.message;
 
     const completion = await groq.chat.completions.create({
-      model: "llama-3.1-8b-instant",
+      model: AI_MODEL,
       messages: [
         {
           role: "system",
@@ -52,7 +54,7 @@ Include safety and weather reasoning.
 `;
 
     const completion = await groq.chat.completions.create({
-      model: "llama-3.1-8b-instant",
+      model: AI_MODEL,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.6
     });
