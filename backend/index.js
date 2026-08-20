@@ -12,11 +12,16 @@ const allowedOrigins = [
   "http://localhost:5500",
   "http://127.0.0.1:5500",
   process.env.FRONTEND_URL,
-].filter(Boolean);
+]
+  .filter(Boolean)
+  .map(origin => origin.replace(/\/$/, ""));
 
 app.use(cors({
   origin(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
+    const normalizedOrigin = origin?.replace(/\/$/, "");
+    const isAllowedNetlifySite = normalizedOrigin?.endsWith(".netlify.app");
+
+    if (!normalizedOrigin || allowedOrigins.includes(normalizedOrigin) || isAllowedNetlifySite) {
       callback(null, true);
       return;
     }
